@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-<circle cx="60" cy="60" r="51" stroke="#71CEF8" stroke-width="4"/>
-<path d="M30 20C55 42 55 78 30 100M90 20C65 42 65 78 90 100" stroke="#71CEF8" stroke-width="3.5" stroke-linecap="round"/>
-<g stroke="#71CEF8" stroke-width="2.7" stroke-linecap="round">
-<path d="M25 29l13 8M22 42l14 5M21 55l14 2M23 68l13-4M26 81l12-7M33 91l9-9"/>
-<path d="M95 29l-13 8M98 42l-14 5M99 55l-14 2M97 68l-13-4M94 81l-12-7M87 91l-9-9"/>
-</g></svg>
+<circle cx="60" cy="60" r="55" fill="#F5FBFF" stroke="#71CEF8" stroke-width="3.5"/>
+<path d="M33 13 C66 40 66 80 33 107 M87 13 C54 40 54 80 87 107" stroke="#098ECF" stroke-width="3.2" stroke-linecap="round"/>
+<g stroke="#098ECF" stroke-width="2.8" stroke-linecap="round"><path d="M49.6 18.1L37.3 28.4"/><path d="M57.2 28.9L43.3 36.9"/><path d="M62.5 40.4L47.3 45.6"/><path d="M65.3 52.5L49.4 54.5"/><path d="M65.6 64.6L49.6 63.4"/><path d="M63.4 76.7L48.0 72.3"/><path d="M58.7 88.4L44.5 81.0"/><path d="M51.6 99.4L39.0 89.6"/><path d="M82.7 28.4L70.4 18.1"/><path d="M76.7 36.9L62.8 28.9"/><path d="M72.7 45.6L57.5 40.4"/><path d="M70.6 54.5L54.7 52.5"/><path d="M70.4 63.4L54.4 64.6"/><path d="M72.0 72.3L56.6 76.7"/><path d="M75.5 81.0L61.3 88.4"/><path d="M81.0 89.6L68.4 99.4"/></g>
+<path d="M32 14 A55 55 0 0 1 99 19" stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round"/>
+</svg>
