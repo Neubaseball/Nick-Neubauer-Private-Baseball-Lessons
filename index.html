@@ -92,7 +92,21 @@ header{background:#06172d;border-bottom:4px solid #18a8ea}
 #training .tile{background:linear-gradient(145deg,#071a36,#102f55);border:1px solid #24517b;border-top:5px solid #18a8ea;box-shadow:0 12px 28px #071a3629}
 #training .tile h3{color:#56c8ff}
 #training .tile p{color:#f0f7ff}
-#training .tile:after{border-color:#71cef829;box-shadow:0 0 0 16px #71cef80a}
+#training .tile::after{
+  content:"";
+  position:absolute;
+  right:-16px;
+  bottom:-20px;
+  width:145px;
+  height:145px;
+  background:url('baseball-stitches.svg?v=natural-stitches-5') center/contain no-repeat;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  opacity:.34;
+  transform:rotate(0deg);
+  pointer-events:none;
+}
 #training .tile:hover{box-shadow:0 16px 32px #071a3640}
 
 /* Matching navy pricing cards */
