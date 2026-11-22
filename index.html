@@ -3,6 +3,56 @@
 <style>
 :root{--navy:#071a36;--blue:#16a8ed;--pale:#e8f7ff;--ink:#0b1d3b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f8fbff;line-height:1.55}a{color:inherit}header{background:var(--navy);color:white;position:sticky;top:0;z-index:2;box-shadow:0 2px 12px #071a3630}.nav{max-width:1100px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-size:1.05rem;font-weight:900;text-decoration:none;letter-spacing:.03em;display:flex;align-items:center;gap:12px}.brand img{width:59px;height:59px;object-fit:contain;background:white;border-radius:9px;padding:3px}.brand span{color:#48c3ff}.navlinks{display:flex;gap:22px;align-items:center}.navlinks a{text-decoration:none;font-weight:700;font-size:.92rem}.navlinks a:hover{color:#76d3ff}.hero{background:radial-gradient(circle at 80% 10%,#1d5780 0,transparent 42%),linear-gradient(135deg,#071a36,#0d2b55);color:white;text-align:center;padding:95px 20px 100px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-95px;bottom:-165px;width:350px;height:350px;border:12px dashed #ffffff19;border-radius:50%;pointer-events:none}.eyebrow{text-transform:uppercase;letter-spacing:.22em;color:#78d6ff;font-size:.82rem;font-weight:800}.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.07;margin:18px auto;max-width:850px;text-transform:uppercase;font-style:italic;letter-spacing:-.035em}.hero h1 em{color:#51c8ff;font-style:inherit}.hero p{font-size:1.16rem;max-width:620px;margin:0 auto 30px;color:#e4f3ff}.actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.btn{display:inline-block;padding:14px 23px;border-radius:7px;font-weight:800;text-decoration:none;background:var(--blue);color:#031329;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#73d6ff}.btn.secondary{background:transparent;color:white;border:2px solid #8adfff}.container{max-width:1100px;margin:auto;padding:70px 22px}.section-heading{text-align:center;margin-bottom:35px}.section-heading small{color:#008bd2;letter-spacing:.18em;font-weight:900;text-transform:uppercase}.section-heading h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:8px 0 10px;line-height:1.2}.section-heading p{max-width:650px;margin:auto;color:#52617a}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tile,.price,.about{background:white;border:1px solid #d9e8f4;border-radius:13px;box-shadow:0 6px 25px #0c2c4b0b}.tile{padding:28px}.tile .num{font-size:.9rem;color:#079cde;font-weight:900;letter-spacing:.12em}.tile h3{margin:0 0 12px;font-size:1.5rem;color:#0099df;font-weight:900}.tile p{margin:0;color:#52617a}.light{background:#eaf7ff}.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.price{text-align:center;padding:28px 15px}.price h3{font-size:1.05rem;margin:0 0 10px}.price strong{display:block;font-size:2.5rem;color:#067fbc}.price p{color:#52617a;margin:5px 0 0;font-size:.9rem}.note{text-align:center;color:#52617a;font-size:.92rem;margin-top:20px}.about{padding:35px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px}.about h2{font-size:2.2rem;margin:8px 0 16px}.about p{color:#455570}.accolades{margin:0;padding-left:20px}.accolades li{margin:10px 0}.credential{margin-top:18px;background:var(--pale);padding:14px 18px;border-radius:8px;font-weight:800}.location{text-align:center;background:var(--navy);color:white;border-radius:16px;padding:48px 25px}.location h2{font-size:2rem;margin:0 0 12px}.location p{color:#d4ebfa}.contact{text-align:center;padding:75px 22px}.contact h2{font-size:clamp(2rem,5vw,3rem);margin:0 0 15px}.contact p{max-width:620px;margin:0 auto 24px;color:#53617a}.phone{font-size:1.5rem;font-weight:900;color:#007fb9;display:inline-block;margin-top:20px}footer{background:#06162c;color:#bdd2e6;text-align:center;padding:25px;font-size:.9rem}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.prices{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.navlinks{gap:12px}.navlinks a{font-size:.8rem}}@media(max-width:540px){.nav{flex-direction:column}.navlinks{justify-content:center;flex-wrap:wrap}.grid{grid-template-columns:1fr}.prices{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.price{padding:20px 8px}.price strong{font-size:2rem}.hero{padding:65px 20px 75px}.container{padding:55px 18px}.about{padding:24px}.actions .btn{width:100%;max-width:310px}}
  .desktop-break{display:none}@media(min-width:1100px){.section-heading p.training-intro{max-width:none;white-space:nowrap;font-size:1rem}.hero p{max-width:1060px;font-size:1.1rem}.contact p{max-width:900px}.desktop-break{display:initial}}
+
+/* Baseball-inspired visual refresh */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap');
+:root{--navy:#071a36;--blue:#19a8e8;--pale:#eaf7ff;--ink:#0b1d3b}
+body{font-family:'Outfit',Arial,sans-serif;background:#fbfdff;line-height:1.6}
+h1,h2,h3,.brand,.btn,.price strong,.phone,.navlinks a{font-family:'Barlow Condensed','Arial Narrow',Arial,sans-serif}
+h1,h2,h3{letter-spacing:.015em}
+header{border-bottom:3px solid #1ca8e6;box-shadow:0 7px 24px #06162d22}
+.nav{max-width:1210px;padding:10px 23px}
+.brand{font-size:1.35rem;letter-spacing:.07em;text-transform:uppercase}
+.brand img{width:65px;height:58px;border-radius:5px;padding:4px;background:#fff}
+.navlinks a{font-size:1.2rem;letter-spacing:.035em}
+.hero{isolation:isolate;min-height:550px;padding:105px 20px 105px;background:radial-gradient(ellipse at 50% -25%,#164977 0%,transparent 57%),linear-gradient(130deg,#07182f,#0a294c 63%,#09223d)}
+.hero:before{content:"";position:absolute;top:-35px;right:-15px;width:270px;height:270px;background:url('baseball-stitches.svg') center/contain no-repeat;opacity:.43;transform:rotate(-12deg);z-index:-1;pointer-events:none}
+.hero:after{right:auto;left:-130px;bottom:-170px;width:380px;height:380px;border:4px solid #9bdcff16;box-shadow:0 0 0 32px #a3e5ff0a,0 0 0 65px #a3e5ff06}
+.hero .eyebrow{display:inline-block;background:#13436a88;padding:8px 19px;border:1px solid #42bdf87d;border-radius:50px;color:#88dcff;font-family:'Barlow Condensed',sans-serif;font-size:1.12rem;letter-spacing:.16em}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;letter-spacing:.012em;text-transform:uppercase;font-size:clamp(3.6rem,8.5vw,7rem);line-height:.93;margin:31px auto 25px;max-width:980px;text-shadow:0 5px 18px #0004}
+.hero h1 em{color:#50caff}
+.hero p{line-height:1.8;color:#e6f5ff}
+.btn{font-size:1.25rem;letter-spacing:.045em;text-transform:uppercase;border-radius:5px;padding:12px 27px;box-shadow:0 5px 0 #03162a55}
+.btn.secondary{box-shadow:none}
+.section-heading small,.about .eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;letter-spacing:.15em;font-weight:800}
+.section-heading h2{font-size:clamp(2.4rem,4.9vw,3.8rem);line-height:1.02;text-transform:uppercase;font-weight:900;margin:9px 0 20px}
+.section-heading h2:after{content:"";display:block;width:95px;height:5px;background:var(--blue);margin:18px auto 0;transform:skewX(-25deg)}
+.container{max-width:1160px}
+.tile,.price,.about{border-radius:7px;border:1px solid #d5e6f2;box-shadow:0 8px 25px #071a360d}
+.tile{position:relative;overflow:hidden;border-top:4px solid #1ba8e6;padding:30px}
+.tile:after{content:"";position:absolute;right:-27px;bottom:-50px;width:115px;height:115px;border:2px solid #0e9fdd13;border-radius:50%;box-shadow:0 0 0 15px #0e9fdd08}
+.tile h3{font-size:2.05rem;font-weight:800;text-transform:uppercase;color:#089bdf;line-height:1.05;position:relative;z-index:1}
+.tile p{position:relative;z-index:1}
+.light{background:linear-gradient(180deg,#e6f5ff,#f2f9fd);border-top:1px solid #d9edfa;border-bottom:1px solid #d9edfa}
+.price{border-bottom:5px solid var(--navy);padding:30px 15px}
+.price h3{font-size:1.6rem;text-transform:uppercase;font-weight:800;margin:0}
+.price strong{font-size:3.5rem;color:#079de0;line-height:1.1}
+.about{border-left:6px solid var(--blue);padding:40px}
+.about h2{font-size:3.4rem;line-height:1;text-transform:uppercase;font-weight:900}
+.about h3{font-size:2.1rem;text-transform:uppercase}
+.accolades li::marker{color:var(--blue)}
+.credential{border-left:4px solid var(--blue);font-size:.95rem}
+.location{position:relative;overflow:hidden;background:linear-gradient(115deg,#071a36,#0d345b);border-radius:8px;border:1px solid #19628b}
+.location:after{content:"";position:absolute;right:-45px;top:-30px;width:205px;height:205px;background:url('baseball-stitches.svg') center/contain no-repeat;opacity:.27;pointer-events:none}
+.location h2{font-size:2.7rem;text-transform:uppercase;position:relative;z-index:1}
+.location p,.location a{position:relative;z-index:1}
+.contact{background:linear-gradient(#fff,#f0f9ff)}
+.contact h2{font-size:clamp(2.5rem,5vw,4rem)}
+.phone{font-size:2.2rem}
+footer{border-top:4px solid var(--blue)}
+@media(min-width:1100px){.section-heading p.training-intro{font-size:1rem}}
+@media(max-width:800px){.hero{min-height:0;padding:80px 20px 85px}.hero:before{width:165px;height:165px}.navlinks a{font-size:1rem}.brand{font-size:1.13rem}.tile h3{font-size:1.85rem}}
+@media(max-width:540px){.nav{padding:10px 12px}.brand img{width:52px;height:48px}.navlinks{gap:13px}.navlinks a{font-size:1.02rem}.hero{padding:65px 18px 78px}.hero h1{font-size:clamp(3.2rem,13vw,5.1rem)}.hero p{font-size:1rem;line-height:1.65}.hero .eyebrow{font-size:.9rem}.section-heading h2{font-size:2.6rem}.tile{padding:25px}.about{padding:25px}.about h2{font-size:2.8rem}.price strong{font-size:2.9rem}.location h2{font-size:2.2rem}}
 </style></head><body>
 <header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><img src="nn-logo.svg" alt="Nick Neubauer NN logo" width="59" height="59"> <span style="color:white">PRIVATE BASEBALL LESSONS</span></a><div class="navlinks"><a href="#training">Training</a><a href="#rates">Rates</a><a href="#about">About</a><a href="#location">Location</a><a href="#contact">Contact</a></div></nav></header>
 <main><section class="hero" id="home"><div class="eyebrow">Train with a collegiate baseball player</div><h1>Take Your Game<br>to the <em>Next Level.</em></h1><p>Private baseball lessons with Nick Neubauer.<br class="desktop-break"> Personalized instruction to help young athletes develop their skills,<br class="desktop-break"> build strong fundamentals, and grow their love for the game.</p><div class="actions"><a class="btn" href="sms:+17273038091?body=Hi%20Nick%2C%20I%27m%20interested%20in%20scheduling%20a%20baseball%20lesson.">Text to Schedule a Lesson</a><a class="btn secondary" href="#rates">View Lesson Rates</a></div></section>
