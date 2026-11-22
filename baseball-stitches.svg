@@ -1,8 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
-<path d="M-20 28 C82 54 121 132 153 324" stroke="#71CEF8" stroke-width="7" stroke-linecap="round"/>
-<g stroke="#71CEF8" stroke-width="5.5" stroke-linecap="round">
-<path d="M21 28l-14 29"/><path d="M45 44l-19 31"/><path d="M66 61l-22 31"/><path d="M84 82l-24 30"/>
-<path d="M99 105l-25 26"/><path d="M110 129l-26 24"/><path d="M119 155l-27 20"/>
-<path d="M126 181l-28 17"/><path d="M132 207l-29 13"/><path d="M137 233l-30 10"/>
-<path d="M141 259l-29 7"/><path d="M146 284l-30 5"/>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none" aria-hidden="true">
+<path d="M -16 22 C 86 51 130 144 162 322" stroke="#0B6597" stroke-opacity=".42" stroke-width="10" stroke-linecap="round"/>
+<path d="M -16 22 C 86 51 130 144 162 322" stroke="#71CEF8" stroke-width="5" stroke-linecap="round"/>
+<g stroke="#71CEF8" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 8.8 30.8 Q 9.2 22.3 7.3 11.6"/>
+<path d="M 8.8 30.8 Q 2.8 36.9 -6.2 42.8"/>
+<path d="M 25.9 39.3 Q 27.2 30.9 26.4 20.1"/>
+<path d="M 25.9 39.3 Q 19.3 44.8 9.7 49.7"/>
+<path d="M 41.7 49.4 Q 44.0 41.2 44.4 30.4"/>
+<path d="M 41.7 49.4 Q 34.6 54.2 24.5 58.0"/>
+<path d="M 56.4 61.3 Q 59.5 53.3 61.1 42.6"/>
+<path d="M 56.4 61.3 Q 48.8 65.2 38.3 67.9"/>
+<path d="M 69.9 74.8 Q 73.9 67.2 76.5 56.8"/>
+<path d="M 69.9 74.8 Q 62.0 78.0 51.3 79.5"/>
+<path d="M 82.4 90.1 Q 87.1 82.9 90.7 72.8"/>
+<path d="M 82.4 90.1 Q 74.2 92.5 63.4 93.0"/>
+<path d="M 94.0 107.2 Q 99.2 100.5 103.7 90.6"/>
+<path d="M 94.0 107.2 Q 85.6 108.8 74.8 108.5"/>
+<path d="M 104.6 126.1 Q 110.4 119.8 115.6 110.3"/>
+<path d="M 104.6 126.1 Q 96.1 127.1 85.4 125.9"/>
+<path d="M 114.5 146.8 Q 120.6 140.9 126.4 131.8"/>
+<path d="M 114.5 146.8 Q 105.9 147.3 95.3 145.4"/>
+<path d="M 123.5 169.5 Q 130.0 163.9 136.3 155.1"/>
+<path d="M 123.5 169.5 Q 115.0 169.4 104.5 166.9"/>
+<path d="M 131.9 194.0 Q 138.6 188.7 145.4 180.3"/>
+<path d="M 131.9 194.0 Q 123.4 193.6 113.0 190.6"/>
+<path d="M 139.7 220.5 Q 146.6 215.5 153.7 207.3"/>
+<path d="M 139.7 220.5 Q 131.2 219.7 120.9 216.3"/>
+<path d="M 147.0 248.9 Q 154.1 244.2 161.4 236.3"/>
+<path d="M 147.0 248.9 Q 138.5 247.9 128.3 244.1"/>
+<path d="M 153.8 279.4 Q 161.0 274.8 168.6 267.1"/>
+<path d="M 153.8 279.4 Q 145.3 278.1 135.3 274.1"/>
+</g>
+</svg>
