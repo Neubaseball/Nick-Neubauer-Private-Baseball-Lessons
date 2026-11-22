@@ -1,0 +1,18 @@
+{
+  "name": "Nick Neubauer Private Baseball Lessons",
+  "short_name": "NN Baseball",
+  "description": "Private baseball lessons at Safety Harbor Little League",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#071a36",
+  "icons": [
+    {
+      "src": "nn-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
