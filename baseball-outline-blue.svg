@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="White baseball with blue stitching">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Outlined baseball with blue stitching">
 <defs>
-  <radialGradient id="leather" cx="32%" cy="25%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#F5FAFF"/><stop offset="1" stop-color="#CEE6F6"/></radialGradient>
   <clipPath id="ball"><circle cx="60" cy="60" r="53"/></clipPath>
 </defs>
-<circle cx="60" cy="60" r="54" fill="url(#leather)" stroke="#82D6F8" stroke-width="2.4"/>
+<circle cx="60" cy="60" r="54" fill="none" stroke="#82D6F8" stroke-width="2.4"/>
 <g clip-path="url(#ball)" fill="none">
   <path d="M29 10 C45 28 48 43 46 60 C44 77 40 94 29 110 M91 10 C75 28 72 43 74 60 C76 77 80 94 91 110" stroke="#A9D8F0" stroke-width="6" stroke-linecap="round"/>
   <path d="M29 10 C45 28 48 43 46 60 C44 77 40 94 29 110 M91 10 C75 28 72 43 74 60 C76 77 80 94 91 110" stroke="#127BAF" stroke-width="2.7" stroke-linecap="round"/>
@@ -27,5 +26,5 @@
     <path d="M81.0 90.0 l9 -5 M81.0 90.0 l-9 -5"/>
     <path d="M85.7 100.0 l9 -5 M85.7 100.0 l-9 -5"/>
   </g>
-  <path d="M20 27 Q35 8 52 8" stroke="#fff" stroke-opacity=".75" stroke-width="4" stroke-linecap="round"/>
+  
 </g></svg>
