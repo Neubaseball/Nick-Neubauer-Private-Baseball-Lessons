@@ -217,81 +217,89 @@ header{background:#06172d;border-bottom:4px solid #18a8ea}
 #rates .cancellation-policy strong{font-weight:800;color:#071a36}
 @media(max-width:540px){#rates .cancellation-policy{font-size:1.04rem}}
 
-/* College baseball photo accents */
-.site-photo{
-  background-image:url('baseball-photo-small.webp');
-  background-size:200% 200%;
-  background-repeat:no-repeat;
-  background-color:#0c2b4e;
-  border:3px solid #58c9fc;
-  border-radius:12px;
-  box-shadow:0 8px 20px #03122736;
-  aspect-ratio:1;
+/* Polished athletic photo backgrounds — four real baseball photos */
+.hero{
+  background:
+    radial-gradient(circle at 9% 8%,rgba(70,194,255,.13),transparent 38%),
+    linear-gradient(120deg,#06182e,#092a4d 70%,#0b3458);
+  isolation:isolate;
 }
-.photo-portrait{background-position:0 0}
-.photo-mound{background-position:100% 0}
-.photo-bat{background-position:0 100%}
-.photo-action{background-position:100% 100%}
-.coach-photo-row{display:flex;gap:14px;margin-top:20px}
-.coach-photo-row .site-photo{width:min(46%,170px)}
-.training-photo-row{
-  display:flex;align-items:center;justify-content:center;
-  gap:26px;max-width:760px;margin:30px auto 0;
-  padding:20px 22px;border-radius:16px;
-  background:linear-gradient(125deg,#071a36,#102f55);
-  color:#fff;
-}
-.training-photo-row .site-photo{width:155px;flex:0 0 155px}
-.photo-row-message{text-align:center;display:flex;flex-direction:column;gap:8px}
-.photo-row-message strong{font:800 1.7rem 'Barlow Condensed',sans-serif;text-transform:uppercase;color:#65d0ff}
-.photo-row-message span{font-size:.96rem;line-height:1.5}
-@media(max-width:800px){.training-photo-row{gap:12px;padding:16px}.training-photo-row .site-photo{width:120px;flex-basis:120px}}
-@media(max-width:540px){
- .coach-photo-row{justify-content:center}
- .coach-photo-row .site-photo{width:min(46%,155px)}
- .training-photo-row{gap:12px;flex-wrap:wrap}
- .training-photo-row .site-photo{width:calc(50% - 6px);flex:0 1 calc(50% - 6px);max-width:150px}
- .photo-row-message{width:100%;order:2}
- .training-photo-row .photo-mound{order:0}
- .training-photo-row .photo-action{order:1}
-}
-
-/* Baseball portraits used as quiet background imagery, not photo cards */
-.hero{isolation:isolate}
 .hero::before{
-  content:"";position:absolute;top:0;right:0;width:43%;height:100%;
-  background-image:linear-gradient(90deg,#071a36 0%,#071a360f 65%),url('baseball-photo-small.webp');
-  background-size:100% 100%,200% 200%;
-  background-position:center,0% 0%;
-  background-repeat:no-repeat;opacity:.36;transform:none;pointer-events:none;z-index:0;
+  content:"";
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  background-image:
+    linear-gradient(90deg,#071a36 0%,rgba(7,26,54,.92) 34%,rgba(7,26,54,.42) 72%,rgba(7,26,54,.35)),
+    linear-gradient(0deg,#071a36 0%,transparent 23%,transparent 78%,#071a36 100%),
+    url('baseball-photo-small.webp');
+  background-size:100% 100%,100% 100%,200% 200%;
+  background-position:center,center,0% 0%;
+  background-repeat:no-repeat;
+  opacity:.75;
+  z-index:0;pointer-events:none;transform:none;
 }
+.hero::after{opacity:.45}
 .hero>*{position:relative;z-index:1}
-#about .about{position:relative;overflow:hidden;isolation:isolate}
+.hero h1{text-shadow:0 5px 30px rgba(2,10,24,.62)}
+.hero p{text-shadow:0 2px 18px rgba(2,10,24,.55)}
+#about .about{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:linear-gradient(135deg,#071a36,#123b60);
+  border-color:#2c577c;
+  box-shadow:0 16px 38px #071a3624;
+}
 #about .about::before{
-  content:"";position:absolute;inset:0 0 0 auto;width:52%;
-  background:url('baseball-photo-small.webp') 0% 100%/200% 200% no-repeat;
-  opacity:.13;pointer-events:none;z-index:0
+  content:"";position:absolute;inset:0;
+  width:100%;
+  background-image:
+    linear-gradient(90deg,#071a36 0%,rgba(7,26,54,.96) 48%,rgba(7,26,54,.65) 100%),
+    url('baseball-photo-small.webp');
+  background-size:100% 100%,200% 200%;
+  background-position:center,0% 100%;
+  background-repeat:no-repeat;
+  opacity:.72;pointer-events:none;z-index:0;
 }
 #about .about>*{position:relative;z-index:1}
-#training{position:relative;isolation:isolate}
+#training{position:relative;isolation:isolate;overflow:hidden}
 #training::before{
-  content:"";position:absolute;inset:0 0 0 auto;width:45%;
-  background:url('baseball-photo-small.webp') 100% 0%/200% 200% no-repeat;
-  opacity:.13;pointer-events:none;z-index:0;
+  content:"";position:absolute;inset:0;
+  width:100%;
+  background-image:
+    linear-gradient(90deg,#f8fbff 0%,rgba(248,251,255,.93) 40%,rgba(248,251,255,.74) 100%),
+    url('baseball-photo-small.webp');
+  background-size:100% 100%,200% 200%;
+  background-position:center,100% 0%;
+  background-repeat:no-repeat;
+  opacity:.55;pointer-events:none;z-index:0;
 }
 #training>*{position:relative;z-index:1}
-#contact{position:relative;isolation:isolate;overflow:hidden}
+#training .tile{backdrop-filter:blur(3px)}
+#contact{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:linear-gradient(180deg,#f8fbff,#eaf6ff);
+}
 #contact::before{
-  content:"";position:absolute;inset:0 auto 0 0;width:40%;
-  background:url('baseball-photo-small.webp') 100% 100%/200% 200% no-repeat;
-  opacity:.17;pointer-events:none;z-index:0;
+  content:"";position:absolute;inset:0;width:100%;
+  background-image:
+    linear-gradient(90deg,rgba(244,250,255,.7) 0%,#f4faff 54%,#f4faff 100%),
+    url('baseball-photo-small.webp');
+  background-size:100% 100%,200% 200%;
+  background-position:center,100% 100%;
+  background-repeat:no-repeat;
+  opacity:.48;pointer-events:none;z-index:0;
 }
 #contact>*{position:relative;z-index:1}
 @media(max-width:700px){
- .hero::before{width:100%;opacity:.17}
- #about .about::before{width:100%;opacity:.08}
- #training::before{width:100%;opacity:.08}
- #contact::before{width:100%;opacity:.08}
+  .hero::before{
+    background-image:
+      linear-gradient(90deg,rgba(7,26,54,.88),rgba(7,26,54,.7)),
+      linear-gradient(0deg,#071a36,transparent 32%,#071a36),
+      url('baseball-photo-small.webp');
+    background-position:center,center,0% 0%;opacity:.58;
+  }
+  #about .about::before{opacity:.38}
+  #training::before{opacity:.26}
+  #contact::before{opacity:.24}
 }
 </style><meta name="build-version" content="baseball-equipment-20261121-2"></head><body>
 <header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><img src="nn-logo.svg" alt="Nick Neubauer NN logo" width="59" height="59"> <span style="color:white">PRIVATE BASEBALL LESSONS</span></a><div class="navlinks"><a href="#training">Training</a><a href="#rates">Rates</a><a href="#about">About</a><a href="#location">Location</a><a href="#contact">Contact</a></div></nav></header>
