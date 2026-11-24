@@ -592,6 +592,16 @@ header{background:#06172d;border-bottom:4px solid #18a8ea}
  #who-i-work-with .who-i-work-with{padding:25px 22px}
  #who-i-work-with p{font-size:1rem}
 }
+
+/* Homepage cover vertical spacing adjustment — preserve exact artwork */
+#home.hero.hero-cover{
+  padding-top:clamp(12px,1.5vw,25px)!important;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 40px,rgba(113,206,248,.08) 40px 42px,transparent 42px 84px),
+    #041528!important;
+}
+#home.hero.hero-cover .hero-cover-image{display:block;width:100%;height:auto;object-fit:contain;object-position:center center}
+@media(max-width:700px){#home.hero.hero-cover{padding-top:clamp(8px,1.5vw,12px)!important}}
 </style><meta name="build-version" content="baseball-equipment-20261121-2"></head><body>
 <header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><img src="nn-logo.svg" alt="Nick Neubauer NN logo" width="59" height="59"> <span style="color:white">PRIVATE BASEBALL LESSONS</span></a><div class="navlinks"><a href="#training">Training</a><a href="#rates">Rates</a><a href="#about">About</a><a href="#location">Location</a><a href="#contact">Contact</a></div></nav></header>
 <main><section class="hero hero-cover" id="home" aria-label="Coach Nick private baseball lessons homepage cover">
