@@ -739,6 +739,21 @@ header{background:#06172d;border-bottom:4px solid #18a8ea}
 #contact .schedule-cta .copy-phone-btn:hover{color:#071a36}
 #contact .schedule-cta .copy-phone-btn:focus-visible{outline:2px solid #0879b6;outline-offset:3px;border-radius:4px}
 #contact .schedule-cta .copy-phone-status{display:block;min-height:1.4em;margin-top:4px;color:#315779;font-size:.82rem}
+
+/* Keep the full offer and Coach Nick on one line without changing the cover photograph */
+#home.hero.hero-cover .cover-updated-subtitle{
+  display:block;width:100%;max-width:none;white-space:nowrap;
+  font:italic 800 clamp(9px,1.75vw,30px)/1.2 'Outfit',Arial,sans-serif;
+  margin:0 auto;text-align:center
+}
+#home.hero.hero-cover .cover-updated-subtitle .cover-updated-coach{
+  display:inline;white-space:nowrap;color:#9edcfa;
+  margin:0;font:inherit;font-weight:900;
+}
+@media(max-width:700px){
+ #home.hero.hero-cover .cover-updated-subtitle{font-size:clamp(7px,1.72vw,12px);white-space:nowrap}
+ #home.hero.hero-cover .cover-updated-subtitle .cover-updated-coach{font-size:inherit}
+}
 </style><meta name="build-version" content="baseball-equipment-20261121-2"></head><body>
 <header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><img src="nn-logo.svg" alt="Nick Neubauer NN logo" width="59" height="59"> <span style="color:white">PRIVATE BASEBALL LESSONS</span></a><div class="navlinks"><a href="#training">Training</a><a href="#rates">Rates</a><a href="#about">About</a><a href="#location">Location</a><a href="#contact">Contact</a></div></nav></header>
 <main><section class="hero hero-cover" id="home" aria-label="Coach Nick private baseball lessons homepage cover">
@@ -746,8 +761,7 @@ header{background:#06172d;border-bottom:4px solid #18a8ea}
   <div class="cover-updated-copy">
     <div class="cover-updated-eyebrow">Train With a College Baseball Player</div>
     <h1>Take Your Game<br>To The <em>Next Level.</em></h1>
-    <p class="cover-updated-subtitle">Private Baseball Lessons for Young Athletes</p>
-    <p class="cover-updated-coach">With Coach Nick</p>
+    <p class="cover-updated-subtitle">Private Baseball Lessons for Young Athletes <strong class="cover-updated-coach">with Coach Nick</strong></p>
   </div>
   <a class="cover-read-more-hitarea" href="#contact" aria-label="Book a baseball lesson with Coach Nick">Book a Lesson</a>
 </section>
