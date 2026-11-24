@@ -602,11 +602,74 @@ header{background:#06172d;border-bottom:4px solid #18a8ea}
 }
 #home.hero.hero-cover .hero-cover-image{display:block;width:100%;height:auto;object-fit:contain;object-position:center center}
 @media(max-width:700px){#home.hero.hero-cover{padding-top:clamp(8px,1.5vw,12px)!important}}
+
+/* Revised headline and booking CTA; overlay affects only top copy, preserving original player photography. */
+#home.hero.hero-cover{isolation:isolate}
+#home.hero.hero-cover .cover-updated-copy{
+  position:absolute;z-index:5;inset:0 0 auto;height:46%;
+  box-sizing:border-box;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  padding:1.7% 2% 0;text-align:center;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 39px,rgba(113,206,248,.075) 39px 41px,transparent 41px 82px),
+    linear-gradient(180deg,#031327 0%,#03172c 82%,rgba(3,23,44,.96) 93%,rgba(3,23,44,0) 100%);
+  color:#fff;line-height:1.1;pointer-events:none;
+}
+#home.hero.hero-cover .cover-updated-eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:1.5vw;
+  max-width:98%;text-transform:uppercase;letter-spacing:.15em;
+  font:800 clamp(8px,1.45vw,24px)/1.2 'Barlow Condensed',Arial,sans-serif;
+  color:#e7f7ff;margin:0 0 1.6%;
+}
+#home.hero.hero-cover .cover-updated-eyebrow::before,
+#home.hero.hero-cover .cover-updated-eyebrow::after{
+  content:"";width:5vw;height:2px;background:#75d2ff;flex-shrink:0;
+}
+#home.hero.hero-cover .cover-updated-copy h1{
+  margin:0 0 1%;padding:0;max-width:none;color:#fff;
+  font:italic 900 clamp(29px,7.45vw,126px)/.88 'Barlow Condensed',Impact,sans-serif;
+  letter-spacing:-.008em;text-transform:uppercase;text-shadow:0 3px 10px #0005;
+}
+#home.hero.hero-cover .cover-updated-copy h1 em{font-style:inherit;color:#72cdf8}
+#home.hero.hero-cover .cover-updated-subtitle{
+  margin:0;color:#fff;max-width:none;
+  font:italic 800 clamp(12px,2.25vw,38px)/1.12 'Outfit',Arial,sans-serif;
+}
+#home.hero.hero-cover .cover-updated-coach{
+  margin:.35% 0 0;color:#9edcfa;max-width:none;
+  font:600 clamp(11px,1.6vw,27px)/1.15 'Outfit',Arial,sans-serif;
+}
+#home.hero.hero-cover .cover-read-more-hitarea{
+  display:flex;align-items:center;justify-content:center;
+  z-index:10;left:37.5%;bottom:4%;width:25%;height:8.3%;
+  padding:0;margin:0;min-width:0;border:1px solid #8cdbff;border-radius:9px;
+  color:#071a36!important;background:linear-gradient(#9adfff,#6cc6f6)!important;
+  font:italic 900 clamp(11px,2.5vw,41px)/1.05 'Barlow Condensed',Impact,sans-serif;
+  text-transform:uppercase;letter-spacing:.02em;text-decoration:none;
+  box-shadow:0 3px 14px #0007;transform:none;
+}
+#home.hero.hero-cover .cover-read-more-hitarea:hover{background:#c1efff!important;transform:none}
+@media(max-width:700px){
+  #home.hero.hero-cover .cover-updated-copy{height:47%;padding-top:2%}
+  #home.hero.hero-cover .cover-updated-eyebrow{font-size:1.55vw;letter-spacing:.07em;margin-bottom:2%}
+  #home.hero.hero-cover .cover-updated-eyebrow::before,
+  #home.hero.hero-cover .cover-updated-eyebrow::after{width:3vw;height:1px}
+  #home.hero.hero-cover .cover-updated-copy h1{font-size:7.4vw;line-height:.9}
+  #home.hero.hero-cover .cover-updated-subtitle{font-size:2.2vw}
+  #home.hero.hero-cover .cover-updated-coach{font-size:1.65vw}
+  #home.hero.hero-cover .cover-read-more-hitarea{left:37.5%;width:25%;height:8.3%;bottom:4%;font-size:2.4vw;border-radius:4px;padding:0}
+}
 </style><meta name="build-version" content="baseball-equipment-20261121-2"></head><body>
 <header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#home"><img src="nn-logo.svg" alt="Nick Neubauer NN logo" width="59" height="59"> <span style="color:white">PRIVATE BASEBALL LESSONS</span></a><div class="navlinks"><a href="#training">Training</a><a href="#rates">Rates</a><a href="#about">About</a><a href="#location">Location</a><a href="#contact">Contact</a></div></nav></header>
 <main><section class="hero hero-cover" id="home" aria-label="Coach Nick private baseball lessons homepage cover">
-  <img class="hero-cover-image" src="coach-nick-caption-removed.webp?v=caption-only-20261124" alt="Train with a collegiate baseball player. Take your game to the next level. Private baseball lessons with Coach Nick. Baseball collage and Read More button." width="1672" height="941" fetchpriority="high" decoding="async">
-  <a class="cover-read-more-hitarea" href="#about" aria-label="Read more about Coach Nick"></a>
+  <img class="hero-cover-image" src="coach-nick-caption-removed.webp?v=caption-only-20261124" alt="Four baseball photos of Coach Nick on a navy pinstripe background" width="1672" height="941" fetchpriority="high" decoding="async">
+  <div class="cover-updated-copy">
+    <div class="cover-updated-eyebrow">Personalized Baseball Training With a College Athlete</div>
+    <h1>Take Your Game<br>To The <em>Next Level.</em></h1>
+    <p class="cover-updated-subtitle">Private Baseball Lessons for Young Athletes</p>
+    <p class="cover-updated-coach">Coach Nick Neubauer</p>
+  </div>
+  <a class="cover-read-more-hitarea" href="#contact" aria-label="Book a baseball lesson with Coach Nick">Book a Lesson</a>
 </section>
 <section class="container" id="about"><div class="about"><div><small class="eyebrow" style="color:#008ecb">Meet your instructor</small><h2>Nick Neubauer</h2><p>Baseball has been my passion for as long as I can remember. From starting in Little League to playing travel ball, high school baseball, and now at the collegiate level, the game has always been a huge part of my life. Throughout my journey, I've gained years of valuable experience and knowledge that I'm passionate about passing on to the next generation of players. My goal is to share what I've learned, help young athletes develop their skills, and give them the tools they need to improve their game and reach the next level.</p></div><div><h3>Experience</h3><ul class="accolades"><li>Current Collegiate Baseball Player</li><li>Years of Little League, Travel Ball, High School, and Collegiate Baseball Experience</li><li>DCF Certified</li><li>Level 2 Background Screened</li></ul><div class="about-section-divider"></div><h3>Accolades &amp; Statistics</h3><ul class="accolades"><li>USA South Rookie Pitcher of the Week</li><li>Greensboro College Rookie of the Year Nominee</li><li>Undefeated 4–0 Freshman Season Record</li><li>2.96 ERA in 27.1 Innings Pitched with 21 Strikeouts</li></ul></div></div></section>
 <section class="container" id="training"><div class="section-heading"><h2>Baseball Training for Young Athletes</h2><p class="training-intro">One-on-one instruction tailored to each player's goals, experience, and areas for improvement.</p></div><div class="grid"><article class="tile"><h3>Pitching</h3><p>Mechanics, command, approach, and pitching fundamentals.</p></article><article class="tile"><h3>Hitting</h3><p>Swing fundamentals, contact, and a consistent approach at the plate.</p></article><article class="tile"><h3>Fielding</h3><p>Glove work, footwork, and defensive fundamentals.</p></article><article class="tile"><h3>Throwing</h3><p>Proper throwing mechanics, accuracy, and fundamentals.</p></article><article class="tile"><h3>Baserunning</h3><p>Smart decisions, technique, and awareness on the bases.</p></article></div></section>
