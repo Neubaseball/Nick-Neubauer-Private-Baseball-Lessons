@@ -9,9 +9,15 @@
   "theme_color": "#071a36",
   "icons": [
     {
-      "src": "nn-logo.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "nn-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "nn-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
